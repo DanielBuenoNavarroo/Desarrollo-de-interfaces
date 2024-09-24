@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script>
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <div>
+    <header class="border1 margin-1">
+      <div class="flex wrap justify-center align-center top padding-1">
         <img src="./images/logo.webp" alt="" />
-        <ul>
+        <ul class="flex justify-center gap-1">
           <li>
             <a href=""><img src="./images/facebook.png" alt="" /></a>
           </li>
@@ -25,49 +34,100 @@
           </li>
         </ul>
       </div>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <nav>
+        <a href="">Inicio</a>
+        <a href="">Nosotros</a>
+        <a href="">Servicios</a>
+      </nav>
     </header>
     <!-- Section 1 -->
-    <section>
-      <div>
-        <h2></h2>
-        <p></p>
-        <button></button>
+    <section class="flex wrap justify-center align-start section1">
+      <div class="div1">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          cupiditate aut debitis. Nisi obcaecati fugit impedit temporibus
+          reiciendis, quis veritatis magni pariatur deserunt, unde eius illo
+          officiis numquam! Nesciunt, illo!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          cupiditate aut debitis. Nisi obcaecati fugit impedit temporibus
+          reiciendis, quis veritatis magni pariatur deserunt, unde eius illo
+          officiis numquam! Nesciunt, illo!
+        </p>
+        <button>ver más</button>
       </div>
-      <div>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <p></p>
+      <div
+        class="div2 border1 margin-1 flex wrap align-center justify-center padding-1 gap-1"
+      >
+        <div class="col-5">
+          <img src="./images/600x450_1.jpeg" alt="" />
+        </div>
+        <div class="col-5">
+          <img src="./images/600x450_6.webp" alt="" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          cupiditate aut debitis. Nisi obcaecati fugit impedit temporibus
+          reiciendis, quis veritatis magni pariatur deserunt, unde eius illo
+          officiis numquam! Nesciunt, illo!
+        </p>
       </div>
     </section>
     <!-- Section 2 -->
-    <section>
-      <div>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
+    <section class="section2 flex wrap gap-1 justify-center align-center">
+      <div class="flex wrap align-center gap-1 justify-center container">
+        <h2>Lorem ipsum dolor sit</h2>
+        <div class="img1"><img src="./images/400x350_1.png" alt="" /></div>
+        <div class="img2"><img src="./images/400x350_2.jpeg" alt="" /></div>
+        <div class="img3">
+          <img src="./images/400x350_3.png" alt="" />
+        </div>
+        <div class="img4">
+          <img src="./images/400x350_4.jpeg" alt="" />
+        </div>
+        <div class="img5">
+          <img src="./images/400x350_5.jpeg" alt="" />
+        </div>
+        <div class="img6">
+          <img src="./images/400x350_1.png" alt="" />
+        </div>
       </div>
-      <p></p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+        cupiditate aut debitis. Nisi obcaecati fugit impedit temporibus
+        reiciendis, quis veritatis magni pariatur deserunt, unde eius illo
+        officiis numquam! Nesciunt, illo!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+        cupiditate aut debitis. Nisi obcaecati fugit impedit temporibus
+        reiciendis, quis veritatis magni pariatur deserunt, unde eius illo
+        officiis numquam! Nesciunt, illo!
+      </p>
     </section>
     <!-- Footer -->
     <footer>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+      <div class="border1 padding-1">
+        <ul class="flex justify-center gap-1">
+          <li>
+            <a href=""><img src="./images/facebook.png" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./images/instagram.png" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./images/linkedin.png" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="./images/tik-tok.png" alt="" /></a>
+          </li>
+        </ul>
       </div>
-      <div>
-        <div></div>
-        <div></div>
+      <div class="flex wrap justify-space-between align-center gap-1 padding-1">
+        <div class="img"><img src="./images/logo.webp" alt="" /></div>
+        <h2>Nombre Alumno:.......</h2>
       </div>
     </footer>
+    <button class="scrollToTop" onclick="scrollToTop()"></button>
   </body>
 </html>

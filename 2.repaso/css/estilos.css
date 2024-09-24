@@ -1,23 +1,23 @@
 /*Estlos generales*/
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
 /*Cabecera*/
 
-header{
-    text-align: center;
+header {
+  text-align: center;
 }
 
 /*
@@ -34,137 +34,158 @@ nav a:hover{
    
     }
 */
-nav{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-nav a{
-    background-color: #F7951E;
-   
-    padding: 10px;
-    margin: 2px 0;
-    color: white;
-    text-transform: uppercase;
-    }
-    nav a:hover{
-        background-color:#6C973E ;
-       
-     }
+nav a {
+  background-color: #f7951e;
 
-    section{
-        width:90%;
-        margin: 20px auto;
-     }
+  padding: 10px;
+  margin: 2px 0;
+  color: white;
+  text-transform: uppercase;
+}
+nav a:hover {
+  background-color: #6c973e;
+}
 
-.flex{
-    display: flex;
+section {
+  width: 90%;
+  margin: 20px auto;
 }
-.wrap{
-    flex-wrap: wrap;
+
+.flex {
+  display: flex;
 }
-footer{
-    text-align: center;
+.wrap {
+  flex-wrap: wrap;
+}
+footer {
+  text-align: center;
 }
 /*
 [class*="col-"]{
     width: 100%;
 }*/
-.col-3, .col-8, .col-4, .col-12{
-    width: 100%;
-    padding: 20px;
+.col-3,
+.col-8,
+.col-4,
+.col-12 {
+  width: 100%;
+  padding: 20px;
 }
-.btn{
-    text-align: center;
+.btn {
+  text-align: center;
 }
-.btn a{
-    background-color: #F7951E;
- display:inline-block;
-    padding: 10px 15px;
-    color: white;
-    border-radius: 5px;
-    margin-top: 10px;
+.btn a {
+  background-color: #f7951e;
+  display: inline-block;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
-
-@media (min-width: 576px) { 
-    section{
-        width:80%;
-       
-     }
-     .contenedor-sm{
-        width: 50%;
-        margin: auto;
-    }
- }
-
+@media (min-width: 576px) {
+  section {
+    width: 80%;
+  }
+  .contenedor-sm {
+    width: 50%;
+    margin: auto;
+  }
+}
 
 @media (min-width: 768px) {
+  nav {
+    background-color: #f7951e;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+  }
+  footer .col-3 {
+    width: 50%;
+  }
+}
 
-    nav{
-       background-color: #F7951E;
-        flex-direction: row;
-       gap:20px;
-       width: 100%;
-       
-    }
-    footer .col-3{
-        width: 50%;
-    }
+@media (min-width: 992px) {
+  .col-4,
+  .col-8,
+  .col-3 {
+    width: 50%;
+  }
+  .contenedor-sm {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav {
+    width: 50%;
+    margin: 0;
+  }
+  footer .col-3 {
+    width: 25%;
+  }
+  footer {
+    align-items: center;
+    background-color: #6c973e;
+    color: black;
+  }
+  footer a {
+    color: inherit;
   }
 
-
-@media (min-width: 992px) { 
-    .col-4, .col-8, .col-3{
-        width: 50%;
-    }
-    .contenedor-sm{
-        width: 70%;
-        margin: auto;
-    }
- }
-
-
-@media (min-width: 1200px) { 
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    nav{
-        width: 50%;
-        margin: 0;
-
-    }
-   footer .col-3 {width: 25%;}
-   footer{
-    align-items: center;
-   background-color: #6C973E;
-   color: black;
-   }
-   footer a{
-    color: inherit;
-   }
-
-    
- .col-1 {width: 8.33%;}
- .col-2 {width: 16.66%;}
- .col-3 {width: 25%;}
- .col-4 {width: 33.33%;}
- .col-5 {width: 41.66%;}
- .col-6 {width: 50%;}
- .col-7 {width: 58.33%;}
- .col-8 {width: 66.66%;}
- .col-9 {width: 75%;}
- .col-10 {width: 83.33%;}
- .col-11 {width: 91.66%;}
- .col-12 {width: 100%;}
- 
- }
- @media (min-width: 1600px) { 
-section,  .contenedor-sm{
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+@media (min-width: 1600px) {
+  section,
+  .contenedor-sm {
     width: 1600px;
-    
- }}
+  }
+}
