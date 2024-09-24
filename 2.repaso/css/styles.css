@@ -142,6 +142,10 @@ header {
 footer {
   margin: 2rem 0;
 
+  .img {
+    margin: 0 auto;
+  }
+
   h2 {
     text-align: center;
     width: 100%;
@@ -151,17 +155,32 @@ footer {
 /* Scroll to top */
 .scrollToTop {
   position: fixed;
+  border: none;
   bottom: 50px;
   right: 5px;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 1rem;
   background-color: #f7951e;
-  color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
+  .triangulo {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid rgb(255, 255, 255);
+  }
+
+  .palo {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+  }
 }
 
 @media (min-width: 576px) {
@@ -193,6 +212,9 @@ footer {
   }
 
   footer {
+    .img {
+      margin: 0;
+    }
     h2 {
       margin-right: 1rem;
       text-align: end;
