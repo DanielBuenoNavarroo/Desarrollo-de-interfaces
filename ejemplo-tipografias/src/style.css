@@ -1,0 +1,22 @@
+/* Roboto Serif */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+/* Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+/* Old London */
+@font-face {
+  font-family: "OldLondon";
+  src: url(./fonts/old_london/OldLondon.ttf);
+}
+h1 {
+  font-family: "Roboto Serif", serif;
+}
+h2 {
+  font-family: "Open Sans", sans-serif;
+}
+h3 {
+  font-family: "OldLondon", "Times New Roman", Times, serif;
+}
+.rrss{
+  color: chocolate;
+  font-size: 40px;
+}
