@@ -1,28 +1,30 @@
-import { routes } from '../lib/data.js';
+import {routes} from '../lib/data.js';
 import error from '../views/error.js';
 
 const app = document.getElementById('app');
-const header = document.getElementById('header')
+const header = document.getElementById('header');
 
-const navigateTo = (uri) => {
+const navigateTo = async (uri) => {
     const route = routes.find((routeFound) => routeFound.path === uri);
 
-    if (route && route.component) {
-        if(header.classList.contains('hidden')) header.classList.remove('hidden')
+    if (route && typeof route.component === 'function') {
+        if (header.classList.contains('hidden')) header.classList.remove('hidden');
         window.history.pushState({}, '', route.path);
-        app.innerHTML = '';
-        app.appendChild(route.component());
+
+        try {
+            const module = await route.component();
+            app.innerHTML = '';
+            app.appendChild(module.default());
+        } catch (e) {
+            console.error("Error al cargar el componente:", e);
+            app.innerHTML = '';
+            app.appendChild(error());
+        }
     } else {
-        if (!header.classList.contains('hidden')) header.classList.add('hidden')
+        if (!header.classList.contains('hidden')) header.classList.add('hidden');
         app.innerHTML = '';
-        app.appendChild(error())
+        app.appendChild(error());
     }
 };
 
-window.onpopstate = () => {
-    navigateTo(window.location.pathname);
-};
-
-navigateTo(window.location.pathname);
-
-export { navigateTo };
+export {navigateTo};

@@ -1,9 +1,7 @@
-import home from '../views/home.js';
-import login from '../views/login.js';
-
 export const routes = [
-    { path: '/', component: home },
-    { path: '/login', component: login },
+    {path: '/', component: () => import('../views/home.js')},
+    {path: '/about', component: () => import('../views/about.js')},
+    {path: '/login', component: () => import('../views/login.js')},
 ];
 
 // {label: '', uri: '', icon: ''}
@@ -11,16 +9,16 @@ export const links = [
     {
         label: 'Home',
         uri: '/',
-        icon: ''
+        icon: 'bi-house-door'
     },
     {
         label: 'About',
         uri: '/about',
-        icon: ''
+        icon: 'bi-info-circle'
     },
     {
         label: 'Contact',
         uri: '/contact',
-        icon: ''
+        icon: 'bi-envelope'
     }
 ]
