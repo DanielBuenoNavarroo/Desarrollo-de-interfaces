@@ -4,7 +4,7 @@ const fillLinks = () => {
     return links.map((link) =>
         `<a
             href="${link.uri}"
-            class="w-full px-3 py-2 rounded-lg relative ${window.location.pathname === link.uri ? 'bg-violet-800' : 'hover:bg-neutral-800'}">
+            class="w-full px-3 py-2 rounded-lg relative ${window.location.pathname === link.uri ? 'bg-violet-800 shadow-lg shadow-neutral-800' : 'hover:bg-neutral-800'}">
             <i class="bi ${link.icon} mr-2"></i> ${link.label}
         </a>`).join('')
 };

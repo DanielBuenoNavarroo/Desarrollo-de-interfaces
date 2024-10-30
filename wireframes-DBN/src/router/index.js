@@ -7,7 +7,7 @@ const header = document.getElementById('header');
 const navigateTo = async (uri) => {
     const route = routes.find((routeFound) => routeFound.path === uri);
 
-    if (route && typeof route.component === 'function') {
+    if (route) {
         if (header.classList.contains('hidden')) header.classList.remove('hidden');
         window.history.pushState({}, '', route.path);
 
