@@ -5,5 +5,5 @@ import header from './src/components/header.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     header()
-    let promise = navigateTo(window.location.pathname);
+    navigateTo(window.location.pathname);
 });

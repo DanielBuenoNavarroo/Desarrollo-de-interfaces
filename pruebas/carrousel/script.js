@@ -4,8 +4,8 @@ const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 const carouselChildrens = [...carousel.children];
 
 let isDragging = false, startX, startScrollLeft;
-
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth)
+
 carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
     carousel.insertAdjacentHTML("afterbegin", card.outerHTML)
 })
